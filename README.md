@@ -20,12 +20,18 @@ LAKU adalah Progressive Web App (PWA) yang memungkinkan user:
 Frontend (React PWA)
         │
         ▼
-Backend API (FastAPI)
+API Gateway / Backend (FastAPI)
+        │
+        ├── Auth Service (Supabase Auth) 
         │
         ├── AI Service (Whisper - HuggingFace)
         │
+        ├── Business Logic (Parser + Transaction)
+        │
         ▼
-Database (Supabase - PostgreSQL)
+Database (Supabase PostgreSQL)
+        │
+        └── Storage (Audio File) 
 ```
 
 ---
@@ -37,17 +43,31 @@ User Speak
    ↓
 React Record Audio
    ↓
+Pre-processing (compress / format audio) 
+   ↓
 Kirim ke Backend (FastAPI)
+   ↓
+Auth Validation (cek token user) 
+   ↓
+Upload ke Storage (optional) 
    ↓
 Whisper AI (Speech to Text)
    ↓
+Confidence Check (opsional AI score) 
+   ↓
 Parser (Text → Intent)
    ↓
-Supabase (Database Update)
+User Confirmation (edit manual) 
+   ↓
+Business Logic (validasi stok, hitung total) 
+   ↓
+Supabase (Database Update by user_id)
+   ↓
+Realtime Trigger (update UI otomatis) 
    ↓
 Response ke Frontend
    ↓
-UI Update (Realtime)
+UI Update
 ```
 
 ---
