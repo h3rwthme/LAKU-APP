@@ -79,8 +79,19 @@ laku-app/
 │
 ├── frontend/              # React + Vite + Tailwind
 ├── backend/               # FastAPI + AI Logic
+├── database/              # schema & RLS policy
+│
 ├── docker/                # Docker config
-├── docs/                  # ERD & dokumentasi
+│   ├── Dockerfile
+│   └── docker-compose.yml
+│
+├── docs/                  # ERD, flowchart, dokumentasi
+│
+├── .env.example           # template env
+├── .gitignore
+├── package.json           # (optional, kalau monorepo)
+├── README.md
+└── LICENSE                # optional tapi pro
 └── README.md
 ```
 
