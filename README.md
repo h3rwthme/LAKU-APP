@@ -274,12 +274,129 @@ HUGGINGFACE_API_KEY=
 
 ---
 
-# Filosofi Produk
+Fitur LAKU APP (Final)
 
-> "1 tombol, 1 suara, langsung jadi transaksi."
+## Core Features (Fitur Utama)
+
+* **Voice-Based Transaction**
+
+  * Input transaksi hanya dengan suara
+  * Contoh: "Laku kopi susu dua"
+
+* **Smart Parsing (Text → Action)**
+
+  * Deteksi intent (jual / restok)
+  * Ambil nama produk & jumlah otomatis
+
+* 📦 **Manajemen Stok Realtime**
+
+  * Stok langsung update setelah transaksi
+  * Sinkronisasi dengan database
 
 ---
 
-# 👨‍💻 Author
+## 👤 User System (Multi Akun)
 
-Built with chaos & logic 🚀
+* Setiap user memiliki akun sendiri (login/register)
+* Data terisolasi (tidak tercampur antar user)
+* Setiap user hanya bisa melihat & mengelola datanya sendiri
+
+---
+
+## Inventory Management
+
+* ➕ Tambah stok manual (tanpa suara)
+* ➖ Pengurangan stok otomatis saat penjualan
+* 🛠️ Tambah & edit produk
+
+---
+
+## 📊 Dashboard & Monitoring
+
+* Tampilan stok semua produk
+* Informasi:
+
+  * Nama barang
+  * Harga
+  * Sisa stok
+* UI sederhana & mobile-friendly
+
+---
+
+## Transaction History
+
+* Riwayat semua transaksi
+* Tercatat otomatis dengan timestamp
+* Bisa digunakan untuk analisis ke depan
+
+---
+
+## Voice Recording System
+
+* Rekam suara langsung dari browser
+* Support perangkat mobile
+* Terintegrasi dengan AI (speech-to-text)
+
+---
+
+## Error Handling (Human Control)
+
+* User bisa edit hasil transkripsi sebelum disimpan
+* Mengurangi kesalahan dari AI
+
+---
+
+## Security & Data Isolation
+
+* Sistem login (authentication)
+* Data dilindungi dengan user_id
+* Row Level Security (RLS) di database
+
+---
+
+## System Architecture
+
+* Frontend: React + Vite + Tailwind
+* Backend: FastAPI (Python)
+* AI: Whisper (Speech-to-Text)
+* Database: Supabase (PostgreSQL)
+
+---
+
+## Progressive Web App (PWA)
+
+* Bisa di-install di HP
+* Experience seperti aplikasi native
+* Akses cepat tanpa buka browser manual
+
+---
+
+## 🐳 DevOps Ready
+
+* Backend menggunakan Docker
+* Mudah deploy ke cloud (Render / HuggingFace)
+* Environment konsisten
+
+---
+
+## Future Features (Pengembangan)
+
+* Analytics (penjualan harian/bulanan)
+* Role system (owner / kasir)
+* Export laporan (Excel / PDF)
+* Multi bahasa & dialek
+* Offline mode (edge processing)
+* Integrasi pembayaran digital
+
+---
+
+# Inti Produk
+
+> "Setiap user punya sistem stok sendiri, dan cukup bicara untuk mencatat transaksi."
+
+---
+
+
+# Author h3rwthme
+
+Built with chaos & logic 
