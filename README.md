@@ -179,7 +179,20 @@ created_at (timestamp)
 ```
 
 ---
-
+# Security (RLS)
+```
+auth.uid() = user_id
+```
+---
+# API Tambah Stok
+```
+POST /add-stock
+{
+  "product_id": "uuid",
+  "qty": 10
+}
+```
+---
 # AI Logic (Parser)
 
 Contoh:
