@@ -312,7 +312,7 @@ CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
 
 ---
 
-# 🔐 Environment Variables
+# Environment Variables
 
 ```
 SUPABASE_URL=
@@ -367,7 +367,7 @@ Fitur LAKU APP (Final)
   * Deteksi intent (jual / restok)
   * Ambil nama produk & jumlah otomatis
 
-* 📦 **Manajemen Stok Realtime**
+* **Manajemen Stok Realtime**
 
   * Stok langsung update setelah transaksi
   * Sinkronisasi dengan database
@@ -390,7 +390,7 @@ Fitur LAKU APP (Final)
 
 ---
 
-## 📊 Dashboard & Monitoring
+## Dashboard & Monitoring
 
 * Tampilan stok semua produk
 * Informasi:
