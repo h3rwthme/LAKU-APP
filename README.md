@@ -103,7 +103,7 @@ frontend/
 
 ---
 
-# 🧠 Backend Structure
+# Backend Structure
 
 ```
 backend/
@@ -137,7 +137,7 @@ backend/
 
 ---
 
-# 🧱 Database Schema (Supabase)
+# Database Schema (Supabase)
 
 ## profiles
 
