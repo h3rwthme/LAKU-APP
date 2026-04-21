@@ -76,33 +76,58 @@ frontend/
 │   └── icons/
 │
 ├── src/
+│   │
 │   ├── components/
+│   │   ├── ui/                    # reusable UI (button, modal, dll)
 │   │   ├── VoiceRecorder.jsx
 │   │   ├── StockCard.jsx
 │   │   └── TransactionModal.jsx
 │   │
 │   ├── pages/
 │   │   ├── Dashboard.jsx
-│   │   |── History.jsx
-│   |   ├── Login.jsx       
-│   |   └── Register.jsx 
+│   │   ├── History.jsx
+│   │   ├── Login.jsx
+│   │   └── Register.jsx
+│   │
+│   ├── layouts/                  # layout global
+│   │   └── MainLayout.jsx
+│   │
+│   ├── routes/                   # routing
+│   │   └── AppRoutes.jsx
 │   │
 │   ├── services/
-│   ├── api.js
-│   └── auth.js   
+│   │   ├── api.js                # request ke backend
+│   │   └── auth.js               # login/register
 │   │
 │   ├── hooks/
 │   │   └── useRecorder.js
 │   │
 │   ├── store/
-│   │   |── useStore.js
-│   |   └── useAuthStore.js
+│   │   ├── useStore.js           # state produk
+│   │   └── useAuthStore.js       # state user
 │   │
 │   ├── utils/
 │   │   └── formatter.js
 │   │
+│   ├── constants/               # optional tapi bagus
+│   │   └── index.js
+│   │
+│   ├── assets/                  # gambar / icon internal
+│   │
+│   ├── styles/
+│   │   └── index.css
+│   │
 │   ├── App.jsx
 │   └── main.jsx
+│
+├── index.html
+├── package.json
+├── vite.config.js
+├── tailwind.config.js
+├── postcss.config.js
+├── .env
+├── .gitignore
+└── README.md
 ```
 
 ---
