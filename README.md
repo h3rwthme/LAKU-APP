@@ -83,16 +83,20 @@ frontend/
 │   │
 │   ├── pages/
 │   │   ├── Dashboard.jsx
-│   │   └── History.jsx
+│   │   |── History.jsx
+│   |   ├── Login.jsx       
+│   |   └── Register.jsx 
 │   │
 │   ├── services/
-│   │   └── api.js
+│   ├── api.js
+│   └── auth.js   
 │   │
 │   ├── hooks/
 │   │   └── useRecorder.js
 │   │
 │   ├── store/
-│   │   └── useStore.js
+│   │   |── useStore.js
+│   |   └── useAuthStore.js
 │   │
 │   ├── utils/
 │   │   └── formatter.js
@@ -112,12 +116,16 @@ backend/
 │   ├── main.py
 │   │
 │   ├── api/
-│   │   └── routes.py
+│   │   |── routes.py
+│   │   ├── auth.py          
 │   │
 │   ├── services/
 │   │   ├── whisper.py
 │   │   ├── parser.py
 │   │   └── transaction.py
+|   |
+│   ├── middleware/
+│   │   └── auth_middleware.py 
 │   │
 │   ├── models/
 │   │   └── schema.py
@@ -151,6 +159,7 @@ created_at (timestamp)
 
 ```
 id (uuid)
+user_id   ← WAJIB
 name (text)
 price (integer)
 stock (integer)
@@ -161,6 +170,7 @@ created_at (timestamp)
 
 ```
 id (uuid)
+user_id   ← WAJIB
 product_id (uuid)
 type (IN / OUT)
 qty (integer)
